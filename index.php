@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="style" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>BioLink de <?php echo $nome; ?></title>
 
 </head>
@@ -30,16 +30,20 @@
         <div class="lista-links">
             <?php
             foreach ($links as $texto => $url) {
-                $classe_extra = "destaque";
-
-
-
+                $classe_extra = "";
+                if($url == "https://wa.me/996795119"){
+                    $classe_extra = "destaque";
+                }
                 // O PHP constrói o botão HTML
                 echo "<a href='$url' class='btn $classe_extra' target='_blank'>
                         $texto
                     </a>";
             }
             ?>
+
+            <div class="area-contato">
+            <a href="contato.php" class="btn-msg">📧 Mandar Mensagem</a>
+        </div>
         </div>
     </div>
 </body>

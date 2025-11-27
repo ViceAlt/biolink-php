@@ -1,25 +1,35 @@
 body {
-    background-color: #1a1a2e;
+    background-image: url("https://images2.alphacoders.com/941/thumb-1920-941898.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: left;
+    font-family: cursive;
+    font-style: italic;
 }
 
 .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: solid rgb(31, 118, 231);
+
 }
 
 .avatar {
-    width: 120px;
+    width: 180px;
     border-radius: 50%;
-    border: 3px solid #e94560;
+    border: 3px solid rgb(31, 118, 231);
 }
 
 .btn {
     display: block;
-    background-color: #16213e;
+    background-image: linear-gradient(rgba(108, 231, 31, 0.5));
     color: white;
     padding: 15px;
     margin: 10px 0;
@@ -33,3 +43,40 @@ body {
     transform: scale(1.02);
 }
 
+.area-contato {
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.btn-msg {
+    display: inline-block;
+    background-image: linear-gradient(rgba(240, 250, 255, 0.5));
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-msg:hover {
+    background-color: #2ec0ff;
+    transform: scale(1.1);
+}
+
+.btn-voltar{
+    display: inline-block;
+    background-image: linear-gradient(rgba(240, 250, 255, 0.5));
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover{
+    background-color: #2ec0ff;
+    transform: scale(1.1);
+}
