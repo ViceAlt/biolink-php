@@ -30,9 +30,8 @@
         <div class="lista-links">
             <?php
             foreach ($links as $texto => $url) {
-                $classe_extra = "";
+                $classe_extra = "destaque";
 
-                // DESAFIO: Se o texto for "WhatsApp" (ou outro que você queira), mude a variável $classe_extra para "destaque". Escreva o IF aqui:
 
 
                 // O PHP constrói o botão HTML
