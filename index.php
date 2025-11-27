@@ -3,6 +3,12 @@
     $nome = "vito";
     $bio = "🐧";
     $imagem = " https://i.pinimg.com/736x/bc/46/79/bc46790fafa3cb9ede81fd3f05ff581d.jpg"; // Pegue o link da SUA foto.
+    $links = [
+        "Instagram" => "https://www.instagram.com/chilled_bird/",
+        "WhatsApp"  => "https://wa.me/996795119",
+        "Meu Jogo Favorito" => "https://toon-jump.netlify.app/",
+        "Música do Momento" => "https://www.youtube.com/watch?v=FLTchCiC0T0&list=RDFLTchCiC0T0&start_radio=1"
+    ];
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +27,21 @@
         <h1> <?php echo $nome; ?> </h1>
         <p> <?php echo $bio; ?> </p>
 
-        <div class="lista-links"></div>
+        <div class="lista-links">
+            <?php
+            foreach ($links as $texto => $url) {
+                $classe_extra = "";
+
+                // DESAFIO: Se o texto for "WhatsApp" (ou outro que você queira), mude a variável $classe_extra para "destaque". Escreva o IF aqui:
+
+
+                // O PHP constrói o botão HTML
+                echo "<a href='$url' class='btn $classe_extra' target='_blank'>
+                        $texto
+                    </a>";
+            }
+            ?>
+        </div>
     </div>
 </body>
 </html>
