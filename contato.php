@@ -37,7 +37,7 @@
             
             <input type="text" name="mensagem_usuario" placeholder="Sua Mensagem..." class="campo-texto">
             
-            <button type="submit">🚀 Enviar Agora</button>
+            <button type="submit" class="enviar">🚀 Enviar Agora</button>
         </form>
 
         <br>
